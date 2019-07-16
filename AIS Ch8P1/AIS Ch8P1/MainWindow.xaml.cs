@@ -23,6 +23,7 @@ namespace AIS_Ch8P1
         public MainWindow()
         {
             InitializeComponent();
+            cbxFamilySize.Focus();
         }
 
         private void exit(object sender, RoutedEventArgs e)

@@ -17,9 +17,9 @@
                 </MenuItem>
                 <MenuItem Header="_Help"/>
             </Menu>
-            <Label Content="Family Size" HorizontalAlignment="Left" Margin="74,46,0,0" VerticalAlignment="Top" FontWeight="Bold" />
-            <Label Content="Household Income" HorizontalAlignment="Left" Margin="31,77,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="120"/>
-            <ComboBox HorizontalAlignment="Left" Margin="164,50,0,0" VerticalAlignment="Top" Width="41" SelectedIndex="-1" IsEditable="True">
+            <Label Content="Family Size" HorizontalAlignment="Left" Margin="74,46,0,0" VerticalAlignment="Top" FontWeight="Bold" KeyboardNavigation.IsTabStop="False" />
+            <Label Content="Household Income" HorizontalAlignment="Left" Margin="31,77,0,0" VerticalAlignment="Top" FontWeight="Bold" Width="120" KeyboardNavigation.IsTabStop="False" />
+            <ComboBox x:Name="cbxFamilySize" HorizontalAlignment="Left" Margin="164,50,0,0" VerticalAlignment="Top" Width="41" IsEditable="True" KeyboardNavigation.TabIndex="0" >
                 <System:String>1</System:String>
                 <System:String>2</System:String>
                 <System:String>3</System:String>
@@ -31,6 +31,7 @@
                 <System:String>9</System:String>
                 <System:String>10</System:String>
             </ComboBox>
+            <TextBox x:Name="txtIncome" HorizontalAlignment="Left" Height="23" Margin="164,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" KeyboardNavigation.TabIndex="1" MaxLength="6" />
         </Grid>
     </Grid>
 </Window>
